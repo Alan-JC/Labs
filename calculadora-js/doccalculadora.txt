@@ -1,0 +1,206 @@
+Laboratorio de JavaScript Calculadora básica
+Crear una carpeta de  nombre calculadora-js en su github y ahí agregar esta  actividad
+Propósito del laboratorio
+En este laboratorio crearás una calculadora sencilla en JavaScript. El programa solicitará dos números, realizará cuatro operaciones y mostrará los resultados en la consola. La actividad te permitirá practicar variables, tipos de datos, entrada, procesamiento y salida.
+Información general
+Duración
+45 a 60 minutos
+Forma de trabajo
+Individual
+Entorno
+Editor que ejecute JavaScript en un navegador (Método 1 (El más rápido): Presionen la tecla F12 en su teclado. 
+Método 2 (El clásico clic): Hagan clic derecho en cualquier parte blanca de la pantalla y selecciona Inspeccionar, después abre la pestaña consola)
+Producto final
+Calculadora con suma, resta, multiplicación y división
+
+
+Objetivos
+Crear variables con let.
+Convertir la entrada del usuario con Number().
+Aplicar los operadores +, -, * y /.
+Mostrar resultados mediante console.log().
+Reconocer y corregir errores básicos.
+Antes de comenzar
+Usa el editor indicado por tu instructora.
+Ejecuta el programa en un entorno de navegador porque la actividad utiliza prompt().
+Guarda tu trabajo con frecuencia.
+
+Parte 1 Preparación
+Confirma que tu editor ejecuta instrucciones de JavaScript. Escribe y ejecuta la siguiente línea:
+console.log("Laboratorio iniciado");
+
+
+Resultado esperado: la consola debe mostrar Laboratorio iniciado.
+Parte 2 Repaso rápido
+Observa el ejemplo e identifica sus tres elementos principales.
+let edad = 25;
+
+
+Elemento
+Ejemplo
+Significado
+Palabra clave
+let
+Crea una variable
+Nombre
+edad
+Identifica la información guardada
+Valor
+25
+Dato almacenado en la variable
+
+Actividad breve
+Escribe el tipo de dato de cada valor.
+Valor
+Tipo de dato
+25
+______Number__________________
+"25"
+____String____________________
+true
+______Boolean__________________
+"Hola"
+__String______________________
+19.99
+______Number__________________
+false
+_______Boolean_________________
+
+Pregunta: ¿Por qué 25 y "25" no representan el mismo tipo de dato?
+Respuesta: ____Porque las comillas transforman el “25” en string___
+
+Construcción de la calculadora
+Completa cada paso y ejecuta el programa después de realizar un cambio. Así podrás detectar los errores con mayor facilidad.
+Paso 1 Solicitar los números
+let numero1 = Number(prompt("Escribe el primer número"));
+let numero2 = Number(prompt("Escribe el segundo número"));
+
+
+Number() convierte el texto recibido por prompt() en un número.
+Paso 2 Completar las operaciones
+Sustituye cada espacio en blanco por el operador correcto.
+let suma = numero1 __ numero2;
+let resta = numero1 __ numero2;
+let multiplicacion = numero1 __ numero2;
+let division = numero1 __ numero2;
+
+
+Paso 3 Mostrar los resultados
+Sustituye los espacios en blanco por la variable que corresponde.
+console.log("Suma: " + __________);
+console.log("Resta: " + __________);
+console.log("Multiplicación: " + __________);
+console.log("División: " + __________);
+
+
+Lista de verificación
+[ si] El programa solicita dos valores.
+[ si] Los dos valores se convierten con Number().
+[ si] Las cuatro operaciones utilizan las variables numero1 y numero2.
+[ si] Cada resultado aparece con una etiqueta clara.
+
+Parte 4 Pruebas
+Ejecuta el programa con los siguientes valores y registra los resultados. En la versión básica evita usar cero como segundo número.
+Prueba
+Número 1
+Número 2
+Suma
+Resta
+Multiplicación
+División
+1
+10
+2
+12
+8
+20
+5
+2
+7
+3
+____10__
+___4___
+____21__
+___2.333___
+3
+5.5
+2
+___7.5___
+___3.5___
+__11____
+__2.75____
+
+Comprobación de la primera prueba
+Si escribes 10 y 2, la consola debe mostrar:
+Suma: 12
+Resta: 8
+Multiplicación: 20
+División: 5
+
+
+Guía para corregir errores
+Situación
+Causa probable
+Qué revisar
+La suma muestra 105
+Las entradas siguen siendo texto
+Verifica que ambos prompt() estén dentro de Number().
+Aparece NaN
+Se escribió un valor que no es numérico
+Ejecuta de nuevo y escribe solamente números.
+El programa marca un error en un texto
+Faltan comillas o paréntesis
+Compara los símbolos de apertura y cierre.
+prompt() no existe
+El entorno no ofrece funciones del navegador
+Ejecuta el código en el editor de navegador indicado.
+
+Registro de un error
+Describe un error que encontraste y cómo lo resolviste.
+Error: No tuve errores, esta facil el ejercicio
+Solución: 
+N/A
+
+Parte 5 Reto extra
+Agrega una variable llamada nombre. El programa debe preguntar cómo se llama la persona y mostrar un saludo antes de los resultados.
+let nombre = prompt("¿Cómo te llamas?");
+console.log("Hola " + nombre + ", estos son tus resultados:");
+
+
+Después conserva las cuatro operaciones de la calculadora.
+Producto a entregar
+[si ] Archivo o enlace con el programa completo.
+[ si] Captura de la consola con una prueba ejecutada.
+[si ] Respuesta breve a las preguntas de reflexión.
+
+Reflexión final
+¿Qué parte del laboratorio fue más sencilla?
+En realidad todas, ya sabiendo la sintaxis
+¿Qué diferencia observaste entre 25 y "25"?
+Uno es number y el otro string
+¿Por qué fue necesario utilizar Number()?
+Para definir que tengo un valor numerico y no un string
+¿Qué cambio agregarías a tu calculadora?
+Quiza un bucle para que no se parara
+Entrega final
+[ si] Probé el programa con al menos dos pares de números.
+[ si] Revisé que las cuatro respuestas sean correctas.
+[si ] Guardé el archivo con el nombre solicitado.
+[si ] Incluí la evidencia requerida.
+
+
+
+
+
+
+
+
+
+Codigo: 
+
+let nombre = prompt ("Como te llamas?"); console.log("Hola "+ nombre + ", estos son tus resultados"); let numero = Number(prompt("Escribe el numero"));let numero2 = Number(prompt("Escribe otro numero"));console.log("Suma", numero+numero2);
+console.log("Resta", numero-numero2);console.log("Multiplicación", numero*numero2);console.log("División", numero/numero2)
+
+
+Evidencia: 
+
