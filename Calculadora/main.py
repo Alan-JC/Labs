@@ -20,7 +20,7 @@ while continuar == True:
     else:
         print (g)
     
-    respuesta = input ("Otra operación? si / no")
+    respuesta = input ("Otra operación? si / no     ")
     
     if respuesta == "no":
         continuar = False
