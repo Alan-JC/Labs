@@ -9,6 +9,7 @@ const arr = [
   arr[0].push(10);
   arr.push([30,31,32,33,34,35]);
   arr[1].splice(0,1);
+  arr[1].reverse();
 
 
   console.log(arr);
