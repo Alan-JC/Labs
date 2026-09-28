@@ -1,6 +1,6 @@
 function Mail(subj, msg) {
-    this.subject = subj
-    this.message = msg
+    this.subject = "hello"
+    this.message = "world"
   }
   
   // Type your code below this line!
