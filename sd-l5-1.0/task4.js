@@ -1,5 +1,21 @@
 
+import { ageCalculator } from "./task3";
+export class FriendAge  {
+ 
+    constructor(name, year, month, day) {
 
-export class FriendAge {
+        this.name = name;
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+    returnAge () {
+        const age = ageCalculator(this.year, this.month, this.day);
+    
+        return this.name + " is " + age + " today!"
+
+    }
+
+
 
 }

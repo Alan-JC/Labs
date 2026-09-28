@@ -1,40 +1,66 @@
-# Instructions
+Instrucciones
 
-Modules are separate files for containing code and data. You can choose to import everything, or specify what to import.
+Los módulos son archivos separados que sirven para contener código y datos. Puedes elegir importar todo el contenido o especificar qué quieres importar.
 
-**Today, you will be writing code that uses modules!**
+¡Hoy vas a escribir código que utiliza módulos!
 
-The classes, objects, and functions for each of these tasks will be imported into `index.js`. **They must have specific names!**
+Las clases, objetos y funciones de cada una de estas tareas serán importados en index.js. ¡Deben tener nombres específicos!
 
+Tareas
+1. Maria está calculando el costo de los pagos mensuales.
 
-## Tasks
+Por cada transacción hay una comisión de $3 y una comisión de interés del 1% (0.01).
 
-1. Maria is calculating the cost of monthly payments. For every transaction there is a $3 fee and a 1% (0.01) interest fee. 
-    * Given an input transaction amount, export a function that returns the value of what she should be paying.
-        * This function should be able to take a number as input, and return a number as output.
+Dado un monto de transacción como entrada, exporta una función que devuelva cuánto debería pagar.
+Esta función debe poder:
+Recibir un número como entrada.
+Devolver un número como resultado.
+3. Ed quiere una forma de introducir los nombres de tres de sus amigos.
+Exporta una clase que reciba 3 argumentos para construir un objeto con 3 propiedades.
+Las 3 propiedades del constructor deben llamarse:
+name1
+name2
+name3
+4. Ed quiere una forma de calcular una edad a partir de una fecha de nacimiento.
+Exporta una función que reciba 3 argumentos:
+año
+mes
+día
+Después debe devolver la edad correcta.
 
-3. Ed would like a way to input the names of three of his friends.
-    * Export a class that will take 3 arguments to construct an object with 3 properties.
-        * The 3 properties in the constructor should be called `name1`, `name2`, and `name3`.
+Por ejemplo:
 
-4. Ed would like a way to calculate an age from a given birth date.
-    * Export a function that will take 3 arguments - a **year**, a **month**, and a **day** - then return an accurate age.
-        * For example, `ageCalculator(2000, 12, 25)` should return the age of someone born on Christmas Day, 2000.
+ageCalculator(2000, 12, 25)
 
-5. Ed would like a way to calculate the ages of his friends.
-    * Export a class that will return a string containing a given friend's name and age. It should:
-        * Take 4 arguments - a **name**, a **year**, a **month**, and a **day** - and construct an object with those 4 properties.
-        * Have a public method named `returnAge()` that will return the following string: `<name> is <age> today!`
+debería devolver la edad de una persona nacida el día de Navidad de 2000, es decir, el 25 de diciembre de 2000.
 
-## Extra Tasks
+5. Ed quiere una forma de calcular las edades de sus amigos.
+Exporta una clase que devuelva un string que contenga el nombre y la edad de un amigo.
 
-If you have completed the above tasks, try the following extra tasks!
+Debe:
 
-5. A teacher wants to create a rubric for grading students based on a score from 0 to 11.
-    * A student passes if they have a score greater than or equal to 5. Export a function that returns "Pass" or "Fail".
+Recibir 4 argumentos:
+name (nombre)
+year (año)
+month (mes)
+day (día)
+Construir un objeto con esas 4 propiedades.
+Tener un método público llamado returnAge() que devuelva el siguiente string:
 
-6. A teacher also wants to mark students who get a high score of 9 or more.
-    * Extend the function so that it returns "Excellent" for scores greater than 8.
+<name> is <age> today!
 
-7. A teacher also wants to mark students who get a perfect score of 11.
-    * Extend the function so that it returns "Perfect" for a score of 11.
+Por ejemplo:
+
+Alan is 18 today!
+
+Tareas extra
+
+Si ya completaste las tareas anteriores, ¡intenta hacer las siguientes tareas adicionales!
+
+5. Un profesor quiere crear una rúbrica para calificar estudiantes basándose en una puntuación del 0 al 11.
+Un estudiante aprueba si obtiene una puntuación mayor o igual a 5.
+Exporta una función que devuelva "Pass" o "Fail".
+6. El profesor también quiere marcar a los estudiantes que obtengan una puntuación alta de 9 o más.
+Modifica la función para que devuelva "Excellent" cuando la puntuación sea mayor que 8.
+7. El profesor también quiere marcar a los estudiantes que obtengan una puntuación perfecta de 11.
+Modifica la función para que devuelva "Perfect" cuando la puntuación sea 11.
