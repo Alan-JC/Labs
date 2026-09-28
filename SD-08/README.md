@@ -1,51 +1,81 @@
-# Instructions
-Classes are an alternative syntax for defining a **template** for constructing objects. Like constructor functions, they can be used to construct objects with their **own** set of properties and methods. Like prototypes, they also allow for objects to **inherit** them. Class **constructor methods** are used to create an instance of a class. **Shared methods** are inherited by each instance.
+# Instrucciones
 
-**Today, you will be defining classes, initialising objects with properties, and acting on those properties with methods!**
+Las **clases** son una sintaxis alternativa para definir una **plantilla** para construir objetos. Al igual que las funciones constructoras, pueden utilizarse para construir objetos con su propio conjunto de propiedades y métodos. Al igual que los prototipos, también permiten que los objetos los **hereden**. Los **métodos constructores** de una clase se utilizan para crear una instancia de una clase. Los **métodos compartidos** son heredados por cada instancia.
 
-For each of these tasks, you will be building and iterating on your solution for the previous task.
+**¡Hoy vas a definir clases, inicializar objetos con propiedades y trabajar con esas propiedades mediante métodos!**
 
+En cada una de estas tareas, irás construyendo y mejorando tu solución a partir de la tarea anterior.
 
-## Tasks
+## Tareas
 
-1. You are working on code that will be used in a video game. You have been asked to create an object class. These will be used to define players in that game. Each player can choose their own name, and these objects will be used to store them.
-    * Modify the Player class so that it will accept a Player "**name**" in an argument.
-        * The key of this property in the resulting object **must** be "`name`" - remember, **computers are very literal**!
+### 1.
 
+Estás trabajando en código que se utilizará en un videojuego. Te han pedido crear una clase para objetos. Estos objetos se utilizarán para definir a los jugadores del juego. Cada jugador puede elegir su propio nombre, y estos objetos se utilizarán para almacenarlo.
 
-2. You have now been asked to improve your code, so that the player objects can define both a name and a level number.
-    * Modify the Player class so that it will accept a Player "name" string and a "**level**" number in two separate arguments.
-        * The key of this property in the resulting object **must** be "`level`" - remember, **computers are very literal**!
+* Modifica la clase `Player` para que acepte un **nombre** del jugador como argumento.
 
+  * La clave de esta propiedad en el objeto resultante **debe ser** `name`. ¡Recuerda que **las computadoras son muy literales**!
 
-3. You have now been asked to include a method that will output a string to the console announcing a level up.
-    * Modify the Player class so that it will accept a player name string and a level number in two separate arguments.
-    * Then, define a shared object method `info()` that will print the following string, replacing the two placeholders:
-        * `<name> has reached Level <level>!`
-            * A player named **Tara** at level **6** should result in "`Tara has reached Level 6!`" printed to the console.
+### 2.
 
+Ahora te han pedido mejorar tu código para que los objetos de los jugadores puedan definir tanto un nombre como un número de nivel.
 
-4. You have now been asked to include a method for levelling a player up, increasing their level number by one.
-    * Modify the Player class so that it will accept a Player name string and a level number in two separate arguments.
-    * Then, define a shared object method `info()` that will output the following string:
-        * `<name> has reached Level <level>`!
-    * Finally, define a second shared object method named `levelUp()` that will **increment** the level of the Player.
+* Modifica la clase `Player` para que acepte un nombre de jugador y un número de **nivel** en dos argumentos separados.
 
-## Extra Tasks
+  * La clave de esta propiedad en el objeto resultante **debe ser** `level`. ¡Recuerda que **las computadoras son muy literales**!
 
-If you have completed the above tasks, try the following extra tasks to **experiment** further!
+### 3.
 
-5. Experiment with allowing the player to level up based on gained experience points.
-    * An experience point is a **number**. A level up should occur when a player gains enough experience points.
-    * Try adding a method to allow a player to gain a given number of experience points.
-    * How many experience points should result in a level up? How can you keep track of this number?
+Ahora te han pedido incluir un método que muestre en la consola un mensaje anunciando que el jugador subió de nivel.
 
+* Modifica la clase `Player` para que acepte un nombre de jugador y un número de nivel en dos argumentos separados.
 
-6. Experiment with allowing constructed player objects to be added to an **array** of party members.
-    * How should an array of party members be identified in your code?
-    * Try adding methods to add or remove player objects from a given party.
+* Después, define un método compartido llamado `info()` que imprima la siguiente cadena, reemplazando los dos valores:
 
+  * `<name> has reached Level <level>!`
 
-7. Experiment with allowing the player to have an inventory of items.
-    * Try adding methods to add or remove items from an inventory.
-    * How can you keep track of the quantity of each item? What **data structure** would you need for this?
+  * Un jugador llamado **Tara** que está en el nivel **6** debería producir:
+
+    `Tara has reached Level 6!`
+
+### 4.
+
+Ahora te han pedido incluir un método para subir de nivel al jugador, aumentando su número de nivel en uno.
+
+* Modifica la clase `Player` para que acepte un nombre de jugador y un número de nivel en dos argumentos separados.
+
+* Después, define un método compartido `info()` que muestre la siguiente cadena:
+
+  * `<name> has reached Level <level>!`
+
+* Finalmente, define un segundo método compartido llamado `levelUp()` que **incremente** el nivel del jugador.
+
+## Tareas adicionales
+
+Si has completado las tareas anteriores, ¡intenta realizar estas tareas adicionales para **experimentar** un poco más!
+
+### 5.
+
+Experimenta permitiendo que el jugador suba de nivel dependiendo de los puntos de experiencia obtenidos.
+
+* Un punto de experiencia es un **número**. El jugador debería subir de nivel cuando obtenga suficientes puntos de experiencia.
+
+* Intenta agregar un método que permita al jugador obtener una determinada cantidad de puntos de experiencia.
+
+* ¿Cuántos puntos de experiencia deberían provocar una subida de nivel? ¿Cómo puedes llevar el control de este número?
+
+### 6.
+
+Experimenta permitiendo que los objetos de jugadores creados se agreguen a un **array** de miembros del grupo.
+
+* ¿Cómo debería identificarse un array de miembros del grupo en tu código?
+
+* Intenta agregar métodos para añadir o eliminar objetos de jugadores de un grupo determinado.
+
+### 7.
+
+Experimenta permitiendo que el jugador tenga un inventario de objetos.
+
+* Intenta agregar métodos para añadir o eliminar objetos del inventario.
+
+* ¿Cómo puedes llevar el control de la cantidad de cada objeto? ¿Qué **estructura de datos** necesitarías para esto?
