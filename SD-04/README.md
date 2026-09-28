@@ -1,31 +1,30 @@
-# Instructions
-Arrays are a simple data structure used everywhere in programming. There are many ways to interact with arrays in JavaScript.
+# Instrucciones
+Los arrays (o arreglos) son una estructura de datos sencilla utilizada en todas partes en la programación. Existen muchas formas de interactuar con los arrays en JavaScript.
 
-**Today, you will be exploring arrays, and teaching yourselves different methods for manipulating them.**
+**Hoy explorarás los arrays y aprenderás por tu cuenta diferentes métodos para manipularlos.**
 
-For each of these tasks, type your code directly in the task file - the marking scripts will evaluate what you have written!
+Para cada una de estas tareas, escribe tu código directamente en el archivo de la tarea; ¡los scripts de evaluación revisarán lo que has escrito!
 
-## Tasks
+## Tareas
 
-1. Use the `arr.push()` method to populate an empty array with the numbers 1 to 20, in order.
+1. Utiliza el método `arr.push()` para llenar un array vacío con los números del 1 al 20, en orden.
 
-2. Use the `arr.reverse()` method to reverse the order of the given array.
+2. Utiliza el método `arr.reverse()` para invertir el orden del array dado.
 
-3. Use the `arr.splice()` method to insert the missing number in the given array at the correct position.
+3. Utiliza el método `arr.splice()` para insertar el número que falta en el array dado, colocándolo en la posición correcta.
 
-4. Use the `arr.splice()` method to delete one of the two duplicate numbers in the given array.
+4. Utiliza el método `arr.splice()` para eliminar uno de los dos números duplicados en el array dado.
 
+## Tareas adicionales
 
-## Extra Tasks
+Si has completado las tareas anteriores, ¡prueba estas tareas extra como desafío adicional!
 
-If you have completed the above tasks, try the following extra tasks for a bonus challenge!
+5. Utiliza `join()` en el array dado para imprimir una cadena de texto con sus números, separados únicamente por comas (¡sin espacios!).
 
-5. Use `join()` on the given array to print a string of numbers from it, separated by commas only - no spaces!
+6. Utiliza `concat()` para combinar los dos arrays dados, `arr1` y `arr2`, en orden, y luego imprime el nuevo array resultante.
 
-6. Use `concat()` to merge the two given arrays, arr1 and arr2, in order, and then print the new array that's created.
-
-7. A matrix is an array of arrays, representing a grid with rows and columns. Use this task to experiment with matrices!
-    * Can you add a single number to an existing row?
-    * Can you add a whole new row of numbers?
-    * Can you remove a single number from a single row?
-    * Can you reverse one of the rows without affecting the others
+7. Una matriz es un array de arrays que representa una cuadrícula con filas y columnas. ¡Utiliza esta tarea para experimentar con matrices!
+    * ¿Puedes añadir un único número a una fila existente?
+    * ¿Puedes añadir una fila de números completamente nueva?
+    * ¿Puedes eliminar un único número de una fila específica?
+    * ¿Puedes invertir una de las filas sin afectar a las demás?
