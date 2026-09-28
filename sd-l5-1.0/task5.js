@@ -1,5 +1,5 @@
-export function rubricPassFail(pass) {
-    if (pass >= 5) {
+export function rubricPassFail(calificacion) {
+    if (calificacio >= 5) {
         return "Pass";
      } else {
         return "Fail";
