@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    color: green; /* Cambia "green" por el color que tú quieras (red, blue, purple, etc.) */
+  }
+  css
+.blue {
+    color: blue;            /* Cambia el color del texto a morado */
+    font-size: 20px;          /* Cambia el tamaño de la letra */
+    font-weight: bold;        /* Pone el texto en negrita */
+}
+  #red {
+    color: red;            /* Cambia el color del texto a naranja */
+    background-color: black;  /* Le añade un fondo negro */
+    padding: 10px;            /* Le da espacio interno para que no quede pegado al borde */
+}
