@@ -1,5 +1,86 @@
 html {
-    height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+/* Centra los enlaces del menú */
+@media (min-width: 576px) {
+  .navbar .nav {
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
-  
+}
+
+/* ---------- Columna de anuncio (izquierda) ---------- */
+.anuncio-columna {
+  position: fixed;
+  left: 0;
+  top: 56px;
+  width: 120px;
+  height: calc(100vh - 56px);
+  background: #f1f1f1;
+  z-index: 1000;
+}
+
+.anuncio-columna img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Columna de noticias (derecha) ---------- */
+.noticias-columna {
+  position: fixed;
+  right: 0;
+  top: 56px;
+  width: 220px;
+  height: calc(100vh - 56px);
+  padding: 16px;
+  background: #f8f9fa;
+  border-left: 1px solid #dee2e6;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.noticias-columna a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.noticias-columna img {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.noticias-columna img:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Contenido central ---------- */
+.contenido {
+  margin-left: 120px;
+  margin-right: 220px;
+}
+
+/* Hace que el footer quede siempre abajo */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  flex: 1;
+}
+
+/* ---------- Footer ---------- */
+.pie {
+  margin-left: 120px;     /* mismo ancho que el anuncio */
+  margin-right: 220px;    /* mismo ancho que las noticias */
+  padding: 16px;
+  background: #212529;
+  color: #fff;
+  text-align: center;
+}
